@@ -1,12 +1,12 @@
-/* ABSTRACTS */
+// ABSTRACTS
 @import "./abstracts/mixins";
 
-/* BASE */
+// BASE
 @import "./base/reset";
 
-/* LAYOUT */
+// LAYOUT
 @import "./layout/contact";
 @import "./layout/navbar";
 
-/* PAGES */
-@import "./pages/banner";
+// PAGES
+@import "./pages/banner"
