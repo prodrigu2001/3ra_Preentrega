@@ -1,0 +1,24 @@
+.banner-image-inicio {
+    background-image: url(../Imagenes/Gordito.jpg);
+    @include image;
+}
+
+.banner-image-plan {
+    background-image: url(../Imagenes/plan_1.jpg);
+    @include image;
+}
+
+.banner-image-grupo {
+    background-image: url(../Imagenes/grupo_1.jpg);
+    @include image;
+}
+
+.banner-image-menu {
+    background-image: url(../Imagenes/menu_1.jpg);
+    @include image;
+}
+
+.banner-image-contactanos {
+    background-image: url(../Imagenes/contactanos_1.jpg);
+    @include image;
+}

@@ -1,0 +1,142 @@
+nav {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+        padding: 0px 15px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+
+        .navbar-brand {
+            font-size: 30px;
+            font-family: 'Potta One', cursive;
+            color: #fff;
+        }
+    }
+
+    .burger {
+        display: none;
+
+        div {
+            width: 25px;
+            height: 3px;
+            background: #fff;
+            margin: 5px;
+            transition: all 0.5s ease;
+
+            .toggle .line1 {
+                transform: rotate(-45deg) translate(-5px, 6px);
+            }
+
+            .toggle .line2 {
+                opacity: 0;
+            }
+
+            .toggle .line3 {
+                transform: rotate(45deg) translate(-5px, -6px);
+            }
+        }
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 1rem;
+
+        li {
+            list-style: none;
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: #fff;
+                border-bottom: 2px solid transparent;
+                transition: 0.5s ease;
+                transform: translateX(0%);
+
+                &:hover {
+                    color: grey;
+                    letter-spacing: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    nav {
+        justify-content: space-between;
+        padding: 0 5vw;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0;
+        top: 8vh;
+        min-height: 35vh;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 0;
+        width: 300px;
+        margin: 0;
+        padding: 15px;
+        transform: translateX(100%);
+        transition: All 0.5s ease-in;
+    }
+
+    .nav-links a {
+        opacity: 0;
+
+    }
+
+    .burger {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 640px) {
+    nav {
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5vw;
+    }
+}
+
+.nav-active {
+    transform: translateX(0);
+}
+
+@media only screen and (max-width: 460px) {
+    .nav-links {
+        width: 100%;
+        transition: All 0.5s ease;
+    }
+}
+
+.nav-active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
