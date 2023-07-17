@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta class="description" content="Queremos que recuerdes tu fiesta por siempre">
+    <meta class="keywords"
+        content="DESPEDIDA, PATERNIDAD, FIESTA, DISFRACES, COMER, BEBER, DADDYSHOWER, BABYSHOWER, EVENTOS">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -22,7 +24,7 @@
 <body>
     <header>
         <nav class="navbar fixed-top navbar-dark p-md-2">
-            <a class="navbar-brand p-md-1" href="./index.html">BS Eventos</a>
+            <a class="navbar-brand p-md-1" href="../index.html">BS Eventos</a>
 
             <ul class="nav-links">
                 <li><a href="../index.html">Inicio</a></li>
@@ -46,16 +48,16 @@
             </div>
         </div>
         <div class="container my-5 d-grid gap-5 vh-100">
-            <h2 class="content text-center"><b>BS</b> es como una despedida de soltero <i>light</i>, pero con cantidades
+            <h1 class="content text-center"><b>BS</b> es como una despedida de soltero <i>light</i>, pero con cantidades
                 industriales de carne, hidratos de carbono y cerveza (o cualquier otra bebida espirituosa que armonice
                 la velada…)
-            </h2>
+            </h1>
             <h2 class="content text-center"> Ojo, comer y beber como vikingo esta perfecto, pero no es lo único.
             </h2>
             <h2 class="content text-center"> Queremos que recuerdes tu fiesta por siempre, por eso la completamos con
                 juegos interactivos que pondrán a prueba tus habilidades como futuro Padre, y muchas actividades, como
-                organizar un
-                partidito o asistir a algún evento deportivo, un recital o hacer una escapada rápida cerca de tu zona.
+                organizar un partidito o asistir a algún evento deportivo, un recital o hacer una escapada rápida cerca
+                de tu zona.
             </h2>
             <h2 class="content text-center"> Y no, por mucho que te insistan, no hace falta que te disfraces de bebe. O
                 tal vez si…
@@ -78,19 +80,19 @@
                     <h5 class="text-uppercase mb-4 font-weight-bold text-primary"> Enlaces </h5>
                     <hr class="mb-4">
                     <p>
-                        <a href="./index.html" class="text-dark">Eventos realizados</a>
+                        <a href="../index.html" class="text-dark">Eventos realizados</a>
                     </p>
                     <p>
-                        <a href="./index.html" class="text-dark">Comentarios</a>
+                        <a href="../index.html" class="text-dark">Comentarios</a>
                     </p>
                     <p>
-                        <a href="./index.html" class="text-dark">Mapa del Sitio</a>
+                        <a href="../index.html" class="text-dark">Mapa del Sitio</a>
                     </p>
                     <p>
-                        <a href="./index.html" class="text-dark">Ayuda</a>
+                        <a href="../index.html" class="text-dark">Ayuda</a>
                     </p>
                     <p>
-                        <a href="./index.html" class="text-dark">Inicio</a>
+                        <a href="../index.html" class="text-dark">Inicio</a>
                     </p>
                 </div>
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
@@ -173,6 +175,17 @@
         };
 
         navSlide();
+    </script>
+    <script>
+        var nav = document.querySelector('nav');
+
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 100) {
+                nav.classList.add('bg-dark', 'shadow');
+            } else {
+                nav.classList.remove('bg-dark', 'shadow');
+            }
+        });
     </script>
 </body>
 

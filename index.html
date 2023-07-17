@@ -25,7 +25,6 @@
     <header>
         <nav class="navbar fixed-top navbar-dark p-md-2">
             <a class="navbar-brand p-md-1" href="./index.html">BS Eventos</a>
-
             <ul class="nav-links">
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./paginas/plan.html">Plan</a></li>
@@ -44,27 +43,40 @@
     <main>
         <div class="banner-image-inicio w-100 vh-150 d-flex justify-content-center align-items-center">
         </div>
-        <div class="container my-5 d-grid gap-5 vh-100">
+        <div class="container my-5 d-grid gap-5 vh-150 content text-center">
             <div>
-                <h2 class=" titulo1 content text-center">
+                <h1>
+                    <b>Alguna vez te preguntaste lo aburridos que son algunos Babyshowers?</b>
+                </h1>
+            </div>
+            <div class="contenedor">
+                <img class="imagen" src="./Imagenes/Gordito_Empalagar1.jpg" alt="empalagado">
+
+                <h2 class="content text-center">
                     Celebrar la llegada de un hijo con familiares y amigos rodeado de globos, tonos pastel y
-                    cupcakes es una opción tan dulce que puede empalagar…
+                    cupcakes es una opción tan dulce que empalaga…
                 </h2>
             </div>
-            <div>
-                <h2 class="titulo2 content text-center">
-                    Sorprenderse cada cinco minutos al recibir el ajuar, los biberones o los peluches puede ser
+            <div class="contenedor">
+                <img class="imagen" src="./Imagenes/Gordito_Sorprender1.jpg" alt="sorprendido">
+
+                <h2 class="content text-center">
+                    Sorprenderse cada cinco minutos al recibir el ajuar, los biberones o los peluches es
                     estresante.
                 </h2>
             </div>
-            <div>
-                <h2 class="titulo3 content text-center">
+            <div class="contenedor">
+                <img class="imagen" src="./Imagenes/Gordito_Participar1.jpg" alt="frustrado">
+
+                <h2 class="content text-center">
                     Participar solo para asegurarse que los invitados hayan probado el cocktail de pera, sandía y
                     mango es frustrante.
                 </h2>
             </div>
-            <div>
-                <h2 class="titulo4 content text-center bg-color">
+            <div class="contenedor">
+                <img class="imagen" src="./Imagenes/Gordito_Tranquilo1.jpg" alt="contento">
+
+                <h2 class="content text-center">
                     Pero tranquilo, no todo es color de rosa. Te acercamos una propuesta para que festejes con “tus
                     amigos”.
                 </h2>
@@ -154,8 +166,6 @@
         </div>
     </footer>
 
-
-
     <script>
         const navSlide = () => {
             const burger = document.querySelector(".burger");
@@ -174,18 +184,22 @@
                     }
                 });
                 burger.classList.toggle("toggle");
+
             });
 
         };
 
         navSlide();
     </script>
+    <script>
+        var nav = document.querySelector('nav');
 
-    <main>
-
-    </main>
-
-    <footer>
-
-    </footer>
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 100) {
+                nav.classList.add('bg-dark', 'shadow');
+            } else {
+                nav.classList.remove('bg-dark', 'shadow');
+            }
+        });
+    </script>
 </body>

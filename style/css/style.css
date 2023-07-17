@@ -30,20 +30,24 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+
 nav a {
   padding: 0px 15px;
   text-decoration: none;
   color: #fff;
   font-size: 20px;
 }
+
 nav a .navbar-brand {
   font-size: 30px;
   font-family: "Potta One", cursive;
   color: #fff;
 }
+
 nav .burger {
   display: none;
 }
+
 nav .burger div {
   width: 25px;
   height: 3px;
@@ -51,22 +55,28 @@ nav .burger div {
   margin: 5px;
   transition: all 0.5s ease;
 }
+
 nav .burger div .toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
+
 nav .burger div .toggle .line2 {
   opacity: 0;
 }
+
 nav .burger div .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
+
 nav .nav-links {
   display: flex;
   gap: 1rem;
 }
+
 nav .nav-links li {
   list-style: none;
 }
+
 nav .nav-links li a {
   display: block;
   text-decoration: none;
@@ -75,6 +85,7 @@ nav .nav-links li a {
   transition: 0.5s ease;
   transform: translateX(0%);
 }
+
 nav .nav-links li a:hover {
   color: grey;
   letter-spacing: 5px;
@@ -112,6 +123,7 @@ nav .nav-links li a:hover {
     display: block;
   }
 }
+
 @media only screen and (max-width: 640px) {
   nav {
     justify-content: space-between;
@@ -119,6 +131,7 @@ nav .nav-links li a:hover {
     padding: 0 5vw;
   }
 }
+
 .nav-active {
   transform: translateX(0);
 }
@@ -143,6 +156,7 @@ nav .nav-links li a:hover {
     transform: translateX(0);
   }
 }
+
 .banner-image-inicio {
   background-image: url(../Imagenes/Gordito.jpg);
   height: 150vh;

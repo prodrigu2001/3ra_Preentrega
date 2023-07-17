@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta class="description" content="Despedida de soltero">
+    <meta class="keywords"
+        content="DESPEDIDA, PATERNIDAD, FIESTA, DISFRACES, COMER, BEBER, AMIGOS, DADDYSHOWER, BABYSHOWER, EVENTOS">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -22,7 +24,7 @@
 <body>
     <header>
         <nav class="navbar fixed-top navbar-dark p-md-2">
-            <a class="navbar-brand p-md-1" href="./index.html">BS Eventos</a>
+            <a class="navbar-brand p-md-1" href="../index.html">BS Eventos</a>
 
             <ul class="nav-links">
                 <li><a href="../index.html">Inicio</a></li>
@@ -46,9 +48,9 @@
             </div>
         </div>
         <div class="container my-5 d-grid gap-5 vh-100">
-            <h2 class="content text-center"> Ahora bien, aunque el evento se parezca mucho a una despedida de soltero,
+            <h1 class="content text-center"> Ahora bien, aunque el evento se parezca mucho a una despedida de soltero,
                 no lo es.
-            </h2>
+            </h1>
             <h2 class="content text-center"> El objetivo de <b>BS</b> es festejar la llegada de un bebé y el inicio de
                 la paternidad, con todo lo que eso implica. Por ello, te recomendamos que invites a aquellos que van a
                 estar ahí en los momentos de flaqueza y sean una cara conocida para tu hijo. O sea, el círculo de amigos
@@ -75,19 +77,19 @@
                     <h5 class="text-uppercase mb-4 font-weight-bold text-primary"> Enlaces </h5>
                     <hr class="mb-4">
                     <p>
-                        <a href="./index.html" class="text-dark">Eventos realizados</a>
+                        <a href="../index.html" class="text-dark">Eventos realizados</a>
                     </p>
                     <p>
-                        <a href="./index.html" class="text-dark">Comentarios</a>
+                        <a href="../index.html" class="text-dark">Comentarios</a>
                     </p>
                     <p>
-                        <a href="./index.html" class="text-dark">Mapa del Sitio</a>
+                        <a href="../index.html" class="text-dark">Mapa del Sitio</a>
                     </p>
                     <p>
-                        <a href="./index.html" class="text-dark">Ayuda</a>
+                        <a href="../index.html" class="text-dark">Ayuda</a>
                     </p>
                     <p>
-                        <a href="./index.html" class="text-dark">Inicio</a>
+                        <a href="../index.html" class="text-dark">Inicio</a>
                     </p>
                 </div>
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
@@ -170,6 +172,17 @@
         };
 
         navSlide();
+    </script>
+    <script>
+        var nav = document.querySelector('nav');
+
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 100) {
+                nav.classList.add('bg-dark', 'shadow');
+            } else {
+                nav.classList.remove('bg-dark', 'shadow');
+            }
+        });
     </script>
 </body>
 
